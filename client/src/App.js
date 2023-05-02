@@ -11,7 +11,7 @@ function App() {
   const [markers, setMarkers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/getEmp')
+    axios.get('https://leafletcluster.onrender.com/getEmp')
       .then(res => {
         console.log(res.data);
         setMarkers(res.data);
